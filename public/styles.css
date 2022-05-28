@@ -1,6 +1,40 @@
-body{
-  background: red;
+* {
+  box-sizing: border-box;
 }
-h3{
-  margin-top: 40px;
+
+html {
+  font-size: 62.5%;
+  background: url('flowers.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+header {
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 4.5rem;
+}
+
+.subTitle {
+  font-size: 3.25rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.75rem;
+}
+
+.one, .two {
+  background: #063970;
+  color: white;
+  padding: 1%;
+  width: 40%;
+  border: 15px inset lightblue;
+}
+
+
+

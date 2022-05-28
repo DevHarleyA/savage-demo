@@ -2,37 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>21 Savage Fans</title>
+  <title>Bug Squad</title>
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="font-awesome.min.css">
+  <!-- Add google font -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>21 Savage</h1>
-  <h2>Why you trappin so hard?</h2>
 
+  <header>
+    <h1 class="title">Bug Squad</h1>
+    <h2 class="subTitle">What bugs have you seen in your garden lately?</h2>
+  </header>
 
-  <h3>Messages</h3>
-  <ul class="messages">
-  <% for(var i=0; i<messages.length; i++) {%>
-    <li class="message">
-      <span><%= messages[i].name %></span>
-      <span><%= messages[i].msg %></span>
-      <span><%= messages[i].thumbUp %></span>
-      <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
-      <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
-      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
-    </li>
-  <% } %>
-  </ul>
-
-  <h2>Add a message</h2>
-
-  <form action="/messages" method="POST">
-    <input type="text" placeholder="name" name="name">
-    <input type="text" placeholder="message" name="msg">
-    <button type="submit">Submit</button>
-  </form>
+  <main>
+    <section class="box one">
+      <h3>Bug Squad Forum</h3>
+        <ul class="messages">
+          <% for(var i=0; i<messages.length; i++) {%>
+          <li class="message">
+            <span class="name"><%= messages[i].name %></span>:
+            <span><%= messages[i].msg %></span>
+            <span><%= messages[i].thumbUp %></span>
+            <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+            <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+            <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+          </li>
+          <% } %>
+        </ul>
+    </section>
+    <section class="box two">
+      <h2>Add a message</h2>
+      <form action="/messages" method="POST">
+        <label for="name">Name: </label>
+        <input type="text" placeholder="Your Name" name="name">
+        <label for="message">Message:</label>
+        <input type="text" placeholder="Your Message" name="msg">
+        <button type="submit">Post</button>
+      </form>
+    </section>
+  </main>
 
   <script src="main.js"></script>
 
