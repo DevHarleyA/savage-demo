@@ -6,7 +6,7 @@ const database = require('./config/config.js')
 
 MongoClient.connect(database.connectionURL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(client => {
-    console.log('Connected to the savage-demo database!')
+    console.log('Connected to the garden club database!')
     const msgCollection = client.db('savage-demo').collection('messages')
 
     app.set('view engine', 'ejs')

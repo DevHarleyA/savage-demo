@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <title>Bug Squad</title>
   <link rel="shortcut icon" href="favicon.ico">
-  <!-- Add google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/265ed8ed5a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -34,10 +37,10 @@
       <h2>Add a message</h2>
       <form action="/messages" method="POST">
         <label for="name">Name: </label>
-        <input type="text" placeholder="Your Name" name="name">
+        <input type="text" placeholder="Your Name" name="name"><br>
         <label for="message">Message:</label>
-        <input type="text" placeholder="Your Message" name="msg">
-        <button type="submit">Post</button>
+        <input type="text" placeholder="Your Message" name="msg"><br>
+        <button type="submit" class="btn">Post</button>
       </form>
     </section>
   </main>

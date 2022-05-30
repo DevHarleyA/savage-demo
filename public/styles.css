@@ -7,6 +7,7 @@ html {
   background: url('flowers.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -16,6 +17,7 @@ header {
 
 .title {
   font-size: 4.5rem;
+  font-weight: 900;
 }
 
 .subTitle {
@@ -34,6 +36,14 @@ main {
   padding: 1%;
   width: 40%;
   border: 15px inset lightblue;
+}
+
+.two {
+  text-align: center;
+}
+
+.message {
+  margin: 4%;
 }
 
 
